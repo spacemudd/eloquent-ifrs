@@ -102,7 +102,7 @@ class AccountSchedule extends AccountStatement
             "reporting_period_id",
             ReportingPeriod::getPeriod($this->period['endDate'])->id
         ) as $balance) {
-            $this->getAmounts($balance, _("Opening Balance"));
+            $this->getAmounts($balance, __("Opening Balance"));
         }
 
         // Clearable Transactions
